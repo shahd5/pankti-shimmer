@@ -1,0 +1,131 @@
+<div id="page-wrapper">
+  <!-- Slider -->
+  <div class="yscott-homepage-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <!-- Carousel Slider -->
+          <div class="carousel slide" data-ride="carousel" id="carouselYscottIndicators">
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-item-next carousel-item-left">
+                <div class="yscott-content-home">
+                  <div class="yscott-view-on-mobile animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <h1>Yvonne Scott</h1>
+                    <p class="yscott-p-subtitle">Makeup Artist</p>
+                  </div>
+                  <img alt=""
+                       class="img yscott-img-home yscott-img-home-left animate-box fadeInLeft animated"
+                       data-animate-effect="fadeInLeft" src="./assets/images/slider02.jpg">
+                  <div class="yscott-content-text yscott-content-text-right">
+                    <div class="yscott-content-absolute yscott-content-absolute-right">
+                      <div class="yscott-not-view-on-mobile animate-box fadeInRight animated"
+                           data-animate-effect="fadeInRight">
+                        <h1>Yvonne Scott</h1>
+                        <p class="yscott-p-subtitle">Makeup Artist</p>
+                      </div>
+                      <p class="text yscott-text-home animate-box fadeInRight animated"
+                         data-animate-effect="fadeInRight">Hello, I’am Yvonne Scott! I love
+                        people love to fell beautiful, which is the reason I’ve spent last
+                        14 years engulfed in doing Make up.</p>
+                    </div>
+                    <div class="yscott-color-button animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                      <div class="yscott-button-link"><a href="about.html">About Me!</a>
+                        <span class="yscott-button-block yscott-button-block-grey animation-bounce"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active carousel-item-left">
+                <div class="yscott-content-home">
+                  <div class="yscott-view-on-mobile animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                    <h1>Yvonne Scott</h1>
+                    <p class="yscott-p-subtitle">Makeup Artist</p>
+                  </div>
+                  <img alt=""
+                       class="img yscott-img-home yscott-img-home-left animate-box fadeInLeft animated"
+                       data-animate-effect="fadeInLeft" src="./assets/images/slider01.jpg">
+                  <div class="yscott-content-text yscott-content-text-right">
+                    <div class="yscott-content-absolute yscott-content-absolute-right">
+                      <div class="yscott-not-view-on-mobile animate-box fadeInRight animated"
+                           data-animate-effect="fadeInRight">
+                        <h1>Yvonne Scott</h1>
+                        <p class="yscott-p-subtitle">Makeup Artist</p>
+                      </div>
+                      <p class="text yscott-text-home animate-box fadeInRight animated"
+                         data-animate-effect="fadeInRight">Stylish and hair, I believe if you
+                        feel comfortable in your skin, then you can spend your energy loving
+                        others and enjoying life instead of worrying and being
+                        self-conscious.</p>
+                    </div>
+                    <div class="yscott-color-button animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                      <div class="yscott-button-link"><a href="services.html">My Services</a>
+                        <span class="yscott-button-block yscott-button-block-grey animation-bounce"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" data-slide="prev" href="#carouselYscottIndicators" role="button"> <span
+                aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span> </a>
+              <a class="carousel-control-next" data-slide="next" href="#carouselYscottIndicators" role="button"> <span
+                aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <div class="yscott-services section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="yscott-text-block yscott-servicess-block">
+            <div class="yscott-text-block-w50">
+              <h2 class="yscott-servicess-title animate-box fadeInUp animated" data-animate-effect="fadeInUp">Services
+              </h2>
+              <p class="animate-box fadeInUp animated" data-animate-effect="fadeInUp">Makeup servicess suspendisse
+                euismod eu justo eget cursus. Services lorem variustions metus. Nam rhoncus euismo.
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+          <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of slides">
+              <ng-template [id]="slide.id" carouselSlide>
+                <div class="item">
+                  <div class="position-re o-hidden">
+                    <img [src]="slide.src">
+                    <div class="con">
+                      <a routerLink={{slide.link}}>
+                        <h5><h5>{{slide.title}}</h5></h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

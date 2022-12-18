@@ -23,9 +23,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/themify-icons.css",
+              "src/assets/modules/magnific-popup/magnific-popup.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/js/plugins/modernizr-2.6.2.min.js",
+              "src/assets/js/plugins/jquery.waypoints.min.js",
+              "src/assets/modules/magnific-popup/jquery.magnific-popup.js",
+              "src/assets/modules/masonry/masonry.pkgd.min.js",
+              "src/assets/js/script.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +112,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
