@@ -4,6 +4,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CarouselModule} from 'ngx-owl-carousel-o';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
@@ -21,6 +22,7 @@ import {HairMakeupComponent} from './hair-makeup/hair-makeup.component';
 import {WeddingMakeupComponent} from './wedding-makeup/wedding-makeup.component';
 import {EffectMakeupComponent} from './effect-makeup/effect-makeup.component';
 import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-makeup.component';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

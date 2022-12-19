@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
         touchDrag: true
       },
       400: {
-        items: 1,
+        items: 2,
         touchDrag: true
       },
       760: {
@@ -89,5 +89,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
+  
 }
