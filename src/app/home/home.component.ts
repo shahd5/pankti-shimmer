@@ -53,7 +53,8 @@ export class HomeComponent implements OnInit {
     }
   ];
   customOptions: OwlOptions = {
-    margin: 20,
+    smartSpeed: 1000,
+    margin: 30,
     loop: true,
     mouseDrag: false,
     touchDrag: false,
