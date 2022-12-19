@@ -1,4 +1,6 @@
-- load the service with animation on home page.
-- When scrolling , header should slightly closape.
-- Loop pictures in eye-makeup and other makeups.
-- reuse services page.
+- When scrolling , header should slightly collapse.(f)
+- Loop pictures in eye-makeup and other makeups.(f)
+- reuse services page.(f)
+- Home page main Carousel right nav not working.(b)
+- Contact us Page email.(f)
+- Check other forms and email it.(f)
