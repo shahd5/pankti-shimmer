@@ -83,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #556a89;
+  color: #556a89; /* Change this  */
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   line-height: 1.5em;
