@@ -11,46 +11,46 @@ export class HomeComponent implements OnInit {
   slides = [
     {
       id: "1",
-      src: './assets/images/services/01.jpg',
+      src: './assets/portfolio/BridalMakeupCarsole400*450.jpg',
       alt: 'Side 1',
-      title: 'Eye Makeup',
-      link: '/eye-makeup'
+      title: 'Bridal Makeup',
+      link: '/bridal-portfolio'
     },
     {
       id: "2",
-      src: './assets/images/services/02.jpg',
+      src: './assets/portfolio/hairStyleCarsole400*450.jpg',
       alt: 'Side 2',
-      title: 'Face Makeup',
-      link: '/face-makeup'
+      title: 'Hair Style',
+      link: '/hair-style'
     },
     {
       id: "3",
-      src: './assets/images/services/03.jpg',
+      src: './assets/portfolio/PartyMakeupCarsole400*450.jpg',
       alt: 'Side 3',
-      title: 'Hair Makeup',
-      link: '/hair-makeup'
+      title: 'Party Makeup',
+      link: '/party-portfolio'
     },
     {
       id: "4",
-      src: './assets/images/services/04.jpg',
+      src: './assets/portfolio/weddingMakeupCarsole400*450.jpg',
       alt: 'Side 4',
       title: 'Wedding Makeup',
-      link: '/wedding-makeup'
-    },
-    {
-      id: "5",
-      src: './assets/images/services/05.jpg',
-      alt: 'Side 5',
-      title: 'Effect Makeup',
-      link: '/effect-makeup'
-    },
-    {
-      id: "6",
-      src: './assets/images/services/06.jpg',
-      alt: 'Side 6',
-      title: 'Children Face Makeup',
-      link: '/children-face-makeup'
+      link: '/wedding-portfolio'
     }
+    /*    {
+          id: "5",
+          src: './assets/images/services/05.jpg',
+          alt: 'Side 5',
+          title: 'Effect Makeup',
+          link: '/effect-portfolio'
+        },
+        {
+          id: "6",
+          src: './assets/images/services/06.jpg',
+          alt: 'Side 6',
+          title: 'Children Face Makeup',
+          link: '/children-face-portfolio'
+        }*/
   ];
   customOptions: OwlOptions = {
     smartSpeed: 1000,
@@ -89,5 +89,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  
+
 }

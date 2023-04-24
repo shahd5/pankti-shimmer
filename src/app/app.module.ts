@@ -16,12 +16,13 @@ import {ServicesComponent} from './services/services.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {BlogPageComponent} from './blog-page/blog-page.component';
 import {BlogPostComponent} from './blog-post/blog-post.component';
-import {EyeMakeupComponent} from './eye-makeup/eye-makeup.component';
-import {FaceMakeupComponent} from './face-makeup/face-makeup.component';
-import {HairMakeupComponent} from './hair-makeup/hair-makeup.component';
+import {PartyMakeupComponent} from './party-makeup/party-makeup.component';
+import {BridalMakeupComponent} from './bridal-makeup/bridal-makeup.component';
+import {HairStyleComponent} from './hair-style/hair-style.component';
 import {WeddingMakeupComponent} from './wedding-makeup/wedding-makeup.component';
 import {EffectMakeupComponent} from './effect-makeup/effect-makeup.component';
 import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-makeup.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -37,12 +38,13 @@ import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-
     PricingComponent,
     BlogPageComponent,
     BlogPostComponent,
-    EyeMakeupComponent,
-    FaceMakeupComponent,
-    HairMakeupComponent,
+    PartyMakeupComponent,
+    BridalMakeupComponent,
+    HairStyleComponent,
     WeddingMakeupComponent,
     EffectMakeupComponent,
-    ChildrenFaceMakeupComponent
+    ChildrenFaceMakeupComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

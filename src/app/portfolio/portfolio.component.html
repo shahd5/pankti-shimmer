@@ -1,0 +1,44 @@
+<div id="page-wrapper">
+  <!-- Por -->
+  <div class="yscott-services yscott-services-wrap">
+    <div class="container">
+      <!--      <div class="row">-->
+      <!--        <div class="col-md-12 col-sm-12">-->
+      <!--          <div class="yscott-text-block yscott-servicess-block">-->
+      <!--            <div class="yscott-text-block-center yscott-text-center yscott-text-block-w50">-->
+      <!--              <h2 class="yscott-servicess-title animate-box fadeInUp animated" data-animate-effect="fadeInUp">-->
+      <!--                Portfolio</h2>-->
+      <!--              <p class="animate-box fadeInUp animated" data-animate-effect="fadeInUp">Makeup servicess suspendisse-->
+      <!--                euismod eu justo eget cursus. Proin pharetra variustions metus. Nam rhoncus euismo.</p><br>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
+
+      <div class="jumbotron">
+        <h1 class="text-center">Portfolio</h1>
+        <p class="text-center">This is my personal and distinguished collection of images showcasing a makeup artist's
+          most exquisite work.</p>
+      </div>
+
+
+      <!-- Page Content -->
+      <div class="container page-top">
+        <div class="row">
+          <div *ngFor="let image of images" class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a
+              class="fancybox"
+              href="{{image.name}}"
+              rel="ligthbox">
+              <img
+                alt=""
+                class="zoom img-fluid"
+                src="{{image.name}}">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
