@@ -12,17 +12,13 @@ export class HeaderComponent implements OnInit {
       item: 'HOME'
     },
     {
-      route: '/about',
-      item: 'ABOUT'
-    },
-    {
       route: '/portfolio',
       item: 'PORTFOLIO'
     },
-    /*    {
-          route: '/pricing',
-          item: 'PRICING'
-        },*/
+    {
+      route: '/services',
+      item: 'SERVICES'
+    },
     {
       route: '/contact',
       item: 'CONTACT'

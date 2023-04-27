@@ -13,6 +13,7 @@ import {WeddingMakeupComponent} from './wedding-makeup/wedding-makeup.component'
 import {EffectMakeupComponent} from './effect-makeup/effect-makeup.component';
 import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-makeup.component';
 import {PortfolioComponent} from "./portfolio/portfolio.component";
+import {ServicesComponent} from "./services/services.component";
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'portfolio', component: PortfolioComponent},
   {path: 'pricing', component: PricingComponent},
+  {path: 'services', component: ServicesComponent},
   {path: 'blog-page', component: BlogPageComponent},
   {path: 'blog-post', component: BlogPostComponent},
   {path: 'party-portfolio', component: PartyMakeupComponent},
