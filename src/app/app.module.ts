@@ -22,7 +22,8 @@ import {HairStyleComponent} from './hair-style/hair-style.component';
 import {WeddingMakeupComponent} from './wedding-makeup/wedding-makeup.component';
 import {EffectMakeupComponent} from './effect-makeup/effect-makeup.component';
 import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-makeup.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import {PortfolioComponent} from './portfolio/portfolio.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     CarouselModule,
     BrowserAnimationsModule,
     NgbModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

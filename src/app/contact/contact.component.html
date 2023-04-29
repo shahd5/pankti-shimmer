@@ -624,7 +624,7 @@
           <div class="yscott-details-block">
             <h3 class="yscott-details-title">Wanna Work Together?</h3>
           </div>
-          <form action="mail.php" class="contact__form" method="post">
+          <form (ngSubmit)="save()" [formGroup]="jobForm" class="contact__form">
             <!-- Form message -->
             <div class="row">
               <div class="col-12">
@@ -636,19 +636,27 @@
             <!-- Form elements -->
             <div class="row">
               <div class="col-md-12 form-group">
-                <input name="name" placeholder="Your Name *" required="" type="text">
+
+                <input formControlName="name" id="name" name="name" placeholder="Your Name *" required="" type="text"/>
               </div>
               <div class="col-md-6 form-group">
-                <input name="email" placeholder="Your Email *" required="" type="email">
+
+                <input formControlName="email" id="email" name="email" placeholder="Your Email *" required=""
+                       type="email"/>
               </div>
               <div class="col-md-6 form-group">
-                <input name="phone" placeholder="Your Number *" required="" type="text">
+                <input formControlName="phone" id="phone" name="phone" placeholder="Your Number *" required=""
+                       type="text"/>
               </div>
               <div class="col-md-12 form-group">
-                <input name="subject" placeholder="Subject *" required="" type="text">
+                <input formControlName="subject" id="subject" name="subject" placeholder="Subject *" required=""
+                       type="text"/>
               </div>
               <div class="col-md-12 form-group">
-                <textarea cols="30" id="message" name="message" placeholder="Message *" required="" rows="4"></textarea>
+                <!--<textarea cols="30" id="message" name="message" placeholder="Message *" required="" rows="4"></textarea>-->
+                <textarea cols="30" formControlName="message" id="message" id="message" name="message"
+                          placeholder="Message *" required="" rows="4"></textarea>
+
               </div>
               <div class="col-md-12">
                 <input name="submit" type="submit" value="Send Message">
@@ -660,4 +668,3 @@
     </div>
   </div>
 </div>
-
