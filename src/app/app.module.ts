@@ -24,6 +24,8 @@ import {EffectMakeupComponent} from './effect-makeup/effect-makeup.component';
 import {ChildrenFaceMakeupComponent} from './children-face-makeup/children-face-makeup.component';
 import {PortfolioComponent} from './portfolio/portfolio.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {EmailService} from "./email.service";
 
 
 @NgModule({
@@ -54,8 +56,11 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserAnimationsModule,
     NgbModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    EmailService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

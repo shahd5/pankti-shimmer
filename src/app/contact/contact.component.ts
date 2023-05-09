@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {EmailService} from '../email.service';
 
 
 @Component({
@@ -16,10 +17,10 @@ export class ContactComponent implements OnInit {
     subject: new FormControl(''),
     message: new FormControl(''),
   });
-  
+
   preview: string = '';
 
-  constructor() {
+  constructor(private emailService: EmailService) {
 
   }
 
@@ -29,6 +30,15 @@ export class ContactComponent implements OnInit {
   save() {
     this.preview = JSON.stringify(this.jobForm.value);
     console.log(this.preview)
+    console.log(FormData)
+    this.emailService.PostMessage(FormData)
+      .subscribe(response => {
+        location.href = 'https://mailthis.to/confirm'
+        console.log(response)
+      }, error => {
+        console.warn(error.responseText)
+        console.log({error})
+      })
   }
 
 }

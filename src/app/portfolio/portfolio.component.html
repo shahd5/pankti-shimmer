@@ -21,24 +21,21 @@
           most exquisite work.</p>
       </div>
 
-
       <!-- Page Content -->
-      <div class="container page-top">
-        <div class="row">
-          <div *ngFor="let image of images" class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a
-              class="fancybox"
-              href="{{image.name}}"
-              rel="ligthbox">
-              <img
-                alt=""
-                class="zoom img-fluid"
-                src="{{image.name}}">
+      <div class="container">
+        <div class="portfolio-item row">
+          <div *ngFor="let image of images" class="item lap col-lg-3 col-md-4 col-6 col-sm ">
+            <a class="fancylight popup-btn"
+               data-fancybox-group="light"
+               href="{{image.name}}">
+              <img alt=""
+                   class="zoom img-fluid"
+                   src="{{image.name}}">
             </a>
           </div>
         </div>
       </div>
-
+      
     </div>
   </div>
 </div>

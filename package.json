@@ -23,6 +23,7 @@
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^4.6.2",
     "jquery": "^3.6.2",
+    "magnific-popup": "^1.1.0",
     "ngx-owl-carousel-o": "^14.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

@@ -1,30 +1,7 @@
-/*body {*/
-/*  background-color: #1d1d1d !important;*/
-/*  font-family: "Asap", sans-serif;*/
-/*  color: #989898;*/
-/*  margin: 10px;*/
-/*  font-size: 16px;*/
-/*}*/
-
-/*#demo {*/
-/*  height: 100%;*/
-/*  position: relative;*/
-/*  overflow: hidden;*/
-/*}*/
-
-
-/*.green {*/
-/*  background-color: #6fb936;*/
-/*}*/
-
-.thumb {
-  margin-bottom: 30px;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-.page-top {
-  margin-top: 85px;
-}
-
 
 img.zoom {
   width: 100%;
@@ -37,22 +14,26 @@ img.zoom {
   -ms-transition: all .3s ease-in-out;
 }
 
-
-.transition {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
+.portfolio-menu {
+  text-align: center;
 }
 
-/*.modal-header {*/
-/*  border-bottom: none;*/
-/*}*/
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all .5s ease;
+}
 
-/*.modal-title {*/
-/*  color: #000;*/
-/*}*/
 
-/*.modal-footer {*/
-/*  display: none;*/
-/*}*/
+.portfolio-item .item {
+  /*width:303px;*/
+  float: left;
+  margin-bottom: 10px;
+}

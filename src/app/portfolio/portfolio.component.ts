@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
+declare var $: any;
+
 
 @Component({
   selector: 'app-portfolio',
@@ -218,8 +220,16 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
 
-
+  ngAfterViewInit() {
+    const popup_btn = $('.popup-btn');
+    popup_btn.magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
   }
 
 
